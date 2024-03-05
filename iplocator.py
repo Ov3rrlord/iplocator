@@ -39,7 +39,7 @@ try:
     print("*" * 40 + "\n")
 
     # adding google map links support
-    def google_map(latitude, longitude):
+    def google_map(lat, long):
         if latitude and longitude is None:
             print("No google map link available.")
             sys.exit(1)
@@ -49,7 +49,7 @@ try:
             print()
 
 
-    google_map(latitude, longitude)
+    google_map(lat=latitude, long=longitude)
 
 except Exception as e:
     print("An error occurred:", e)
