@@ -4,11 +4,11 @@ from datetime import datetime
 import requests
 from config import auth
 
-API = auth.api
+API_KEY = auth.api
 IP = input("Please insert the IP address here: ").strip()
 
 try:
-    response = requests.get(f'https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API}')
+    response = requests.get(f'https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API_KEY}')
     data = response.json()
 
     latitude = data["location"].get("latitude")
