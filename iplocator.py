@@ -51,6 +51,6 @@ try:
 
     google_map(lat=latitude, long=longitude)
 
-except Exception as e:
-    print("An error occurred, please try again")
+except KeyError as e:
+    print("An error occurred, please try again.")
     sys.exit(1)
