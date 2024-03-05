@@ -22,7 +22,7 @@ with open("location.json", "a") as write_file:
 
 dt = datetime.now()
 print("*" * 40)
-print("Date and time is: ",dt.strftime("%Y-%m-%d %H:%M:%S"))
+print("Date and time is: ", dt.strftime("%Y-%m-%d %H:%M:%S"))
 print("*" * 40)
 
 print("IP              *", data.get("ip"))
@@ -43,6 +43,8 @@ print("Continent Code  *", data.get("continent_code"))
 print("*" * 40)
 print()
 
+
+# adding google map links support
 def google_map(latitude, longitude):
     if latitude or longitude is None:
         print("No google map link available.")
@@ -53,4 +55,4 @@ def google_map(latitude, longitude):
         print()
 
 
-google_map(latitude,longitude)
+google_map(latitude, longitude)
