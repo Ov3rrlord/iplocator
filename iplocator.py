@@ -46,7 +46,7 @@ print()
 
 # adding google map links support
 def google_map(latitude, longitude):
-    if latitude or longitude is None:
+    if latitude and longitude is None:
         print("No google map link available.")
         sys.exit(1)
     else:
