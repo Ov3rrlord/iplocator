@@ -1,0 +1,76 @@
+{
+   "city":{
+      "names":{
+         "en":"Seaside"
+      },
+      "name":"Seaside"
+   },
+   "continent":{
+      "code":"NA",
+      "geoname_id":6255149,
+      "names":{
+         "de":"Nordamerika",
+         "en":"North America",
+         "es":"Norteamérica",
+         "fa":" امریکای شمالی",
+         "fr":"Amérique Du Nord",
+         "ja":"北アメリカ大陸",
+         "ko":"북아메리카",
+         "pt-BR":"América Do Norte",
+         "ru":"Северная Америка",
+         "zh-CN":"北美洲"
+      },
+      "name":"North America"
+   },
+   "country":{
+      "geoname_id":6252001,
+      "iso_code":"US",
+      "names":{
+         "de":"Vereinigte Staaten von Amerika",
+         "en":"United States",
+         "es":"Estados Unidos de América (los)",
+         "fa":"ایالات متحدهٔ امریکا",
+         "fr":"États-Unis",
+         "ja":"アメリカ合衆国",
+         "ko":"미국",
+         "pt-BR":"Estados Unidos",
+         "ru":"США",
+         "zh-CN":"美国"
+      },
+      "name":"United States",
+      "name_native":"United States",
+      "phone_code":"1",
+      "capital":"Washington D.C.",
+      "currency":"USD,USN,USS",
+      "flag":"🇺🇸",
+      "languages":[
+         {
+            "iso_code":"en",
+            "name":"English",
+            "name_native":"English"
+         }
+      ]
+   },
+   "location":{
+      "latitude":36.6105,
+      "longitude":-121.848
+   },
+   "subdivisions":[
+      {
+         "names":{
+            "en":"California"
+         }
+      }
+   ],
+   "state":{
+      "name":"California"
+   },
+   "datasource":[
+      {
+         "name":"IP to City Lite",
+         "attribution":"<a href='https://db-ip.com'>IP Geolocation by DB-IP</a>",
+         "license":"Creative Commons Attribution License"
+      }
+   ],
+   "ip":"206.22.56.21"
+}

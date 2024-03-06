@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17dc0c8a-9b7e-490f-bea7-2bf4738d1934" name="Changes" comment="New script">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/iplocator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+    <list default="true" id="17dc0c8a-9b7e-490f-bea7-2bf4738d1934" name="Changes" comment="Updated README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iplocator.py" beforeDir="false" afterPath="$PROJECT_DIR$/iplocator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location.json" beforeDir="false" afterPath="$PROJECT_DIR$/location.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/cesario/github/iplocator",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
@@ -155,12 +149,108 @@
       <option name="project" value="LOCAL" />
       <updated>1709078399129</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated the script, changed the API provider, added a config file to store the api key">
+      <option name="closed" value="true" />
+      <created>1709662746281</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709662746281</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated the script, changed the API provider, added a config file to store the api key">
+      <option name="closed" value="true" />
+      <created>1709662798658</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709662798658</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test">
+      <option name="closed" value="true" />
+      <created>1709662944704</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709662944704</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test">
+      <option name="closed" value="true" />
+      <created>1709664247121</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709664247121</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Modified google map parameters">
+      <option name="closed" value="true" />
+      <created>1709664348078</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709664348078</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Modified google map parameters">
+      <option name="closed" value="true" />
+      <created>1709664460022</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709664460022</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Modified google map parameters">
+      <option name="closed" value="true" />
+      <created>1709665030871</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709665030871</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed exception errors">
+      <option name="closed" value="true" />
+      <created>1709665160824</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709665160824</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated README.md">
+      <option name="closed" value="true" />
+      <created>1709665608955</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709665608955</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Updated README.md">
+      <option name="closed" value="true" />
+      <created>1709665832772</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709665832772</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="New script" />
-    <option name="LAST_COMMIT_MESSAGE" value="New script" />
+    <MESSAGE value="Updated the script, changed the API provider, added a config file to store the api key" />
+    <MESSAGE value="test" />
+    <MESSAGE value="Modified google map parameters" />
+    <MESSAGE value="Fixed exception errors" />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
 </project>
