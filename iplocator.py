@@ -6,7 +6,7 @@ from config import auth
 
 API_KEY = auth.api
 print()
-IP = input("Please insert the IP address here: ").strip()
+IP = sys.argv[1]
 print()
 
 try:
