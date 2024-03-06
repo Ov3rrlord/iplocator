@@ -41,7 +41,7 @@ try:
     print("*" * 48 + "\n")
 
     # generate google map link
-    def google_map(lat, long) -> int:
+    def google_map(lat, long):
         if latitude and longitude is None:
             print("No google map link available.")
             sys.exit(1)
