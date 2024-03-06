@@ -5,7 +5,9 @@ import requests
 from config import auth
 
 API_KEY = auth.api
+print()
 IP = input("Please insert the IP address here: ").strip()
+print()
 
 try:
     response = requests.get(f'https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API_KEY}')
@@ -19,9 +21,9 @@ try:
         json.dump(data, write_file, indent=4)
 
     dt = datetime.now()
-    print("*" * 40)
+    print("*" * 48)
     print("Date and time is: ", dt.strftime("%Y-%m-%d %H:%M:%S"))
-    print("*" * 40 + "\n")
+    print("*" * 48)
 
     print("IP              *", data.get("ip"))
     print("Country code:   *", data["country"].get("iso_code"))
@@ -36,10 +38,10 @@ try:
     print("Continent Code  *", data["continent"].get("code"))
     print("Flag:           *", data["country"].get("flag"))
 
-    print("*" * 40 + "\n")
+    print("*" * 48 + "\n")
 
     # generate google map link
-    def google_map(lat, long):
+    def google_map(lat, long) -> int:
         if latitude and longitude is None:
             print("No google map link available.")
             sys.exit(1)
