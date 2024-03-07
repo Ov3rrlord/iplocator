@@ -4,4 +4,4 @@ class Auth:
 
 
 # You will need to provide your api key by creating an account on https://www.geoapify.com/
-auth = Auth(api="")
+auth = Auth(api="INSERT YOUR API KEY HERE")
