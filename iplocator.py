@@ -14,9 +14,9 @@ try:
         print("Usage: python3 iplocator.py IP_ADDRESS")
         sys.exit(0)
 
-    response = requests.get(f'https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API_KEY}')
+    response = requests.get(f'https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API_KEY}', timeout=10)
     data = response.json()
-    response2 = requests.get(f'https://ipinfo.io/{IP}?token={API_KEY2}')
+    response2 = requests.get(f'https://ipinfo.io/{IP}?token={API_KEY2}', timeout=10)
     data2 = response2.json()
 
     latitude = data["location"].get("latitude")
@@ -28,7 +28,7 @@ try:
     lat2 = location2[0]
     long2 = location2[1]
 
-    with open("location.json", "w") as write_file:
+    with open("location.json", "w", encoding='UTF-8') as write_file:
         json.dump(data, write_file, indent=4)
         json.dump(data2, write_file, indent=4)
 
@@ -64,7 +64,7 @@ try:
             map_url = f"https://maps.google.com/?q={lat2},{long2}"
             print("Google map link:", map_url)
             map_url2 = f"https://maps.google.com/?q={latitude},{longitude}"
-            
+
             print("Second Google map link:", map_url2)
 
 
