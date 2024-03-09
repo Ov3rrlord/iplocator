@@ -64,6 +64,7 @@ try:
             map_url = f"https://maps.google.com/?q={lat2},{long2}"
             print("Google map link:", map_url)
             map_url2 = f"https://maps.google.com/?q={latitude},{longitude}"
+            
             print("Second Google map link:", map_url2)
 
 
