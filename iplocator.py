@@ -66,8 +66,6 @@ try:
             map_url2 = f"https://maps.google.com/?q={latitude},{longitude}"
 
             print("Second Google map link:", map_url2)
-
-
             print()
 
 
@@ -78,3 +76,8 @@ except IndexError:
     sys.exit(1)
 except KeyError:
     print("An error occurred. Please verify and try again.")
+except ConnectionError:
+    print("Network error...")
+except FileNotFoundError:
+    print("There is an error while trying too get the config file")
+
