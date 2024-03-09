@@ -7,10 +7,13 @@ from config import auth, auth2
 API_KEY = auth.api
 API_KEY2 = auth2.ipinfoapi
 print()
-IP = sys.argv[1]
-print()
 
 try:
+    IP = sys.argv[1]
+    if sys.argv[1] == "-h":
+        print("Usage: python3 iplocator.py IP_ADDRESS")
+        sys.exit(0)
+
     response = requests.get(f'https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API_KEY}')
     data = response.json()
     response2 = requests.get(f'https://ipinfo.io/{IP}?token={API_KEY2}')
@@ -52,7 +55,7 @@ try:
     print("*" * 48 + "\n")
 
     # generate google map link
-    def google_map(lat, long):
+    def google_map():
         if latitude and longitude is None:
             print("No google map link available.")
             sys.exit(1)
@@ -67,8 +70,10 @@ try:
             print()
 
 
-    google_map(lat=latitude, long=longitude)
+    google_map()
 
-except KeyError as e:
-    print("An error occurred, please try again.")
+except IndexError:
+    print("You need to provide an IP address.")
     sys.exit(1)
+except KeyError:
+    print("An error occurred. Please verify and try again.")
