@@ -1,6 +1,6 @@
-'''
-This script is used to get informations on an IP address and generate google maps links for them
-'''
+"""
+This script is used to get info on an IP address and generate Google Maps links for them
+"""
 
 import json
 import sys
@@ -61,13 +61,13 @@ try:
     # generate google map link
     def google_map():
         """
-        This function generates the google map links using the api datas
+        This function generates the Google map links using the api datas
         """
         if latitude and longitude is None:
             print("No google map link available.")
             sys.exit(1)
         else:
-            # There are two google maps url available because of no accuracy
+            # There are two Google Maps url available because of no accuracy
             map_url = f"https://maps.google.com/?q={lat2},{long2}"
             print("Google map link:", map_url)
             map_url2 = f"https://maps.google.com/?q={latitude},{longitude}"
@@ -87,4 +87,3 @@ except ConnectionError:
     print("Network error...")
 except FileNotFoundError:
     print("There is an error while trying too get the config file")
-
