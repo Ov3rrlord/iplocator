@@ -1,4 +1,8 @@
 class Auth:
+    
+    """
+    This class is used to store the API keys for the main code
+    """    
     def __init__(self, api:None, ipinfoapi:None):
         self.api = api
         self.ipinfoapi = ipinfoapi

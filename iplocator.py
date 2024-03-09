@@ -1,3 +1,7 @@
+'''
+This script is used to get informations on an IP address and generate google maps links for them
+'''
+
 import json
 import sys
 from datetime import datetime
@@ -56,6 +60,9 @@ try:
 
     # generate google map link
     def google_map():
+        """
+        This function generates the google map links using the api datas
+        """
         if latitude and longitude is None:
             print("No google map link available.")
             sys.exit(1)
