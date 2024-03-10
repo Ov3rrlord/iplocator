@@ -1,3 +1,7 @@
+# This script is designed to retrieve information about an IP address and generate Google Maps links
+# based on that information. It uses two different APIs to gather data about the IP address provided
+# as a command-line argument. The script extracts details such as the country, city, latitude,
+# longitude, phone code, currency, organization, timezone, and more related to the IP address.
 """
 This script is used to get info on an IP address and generate Google Maps links for them
 """
@@ -9,7 +13,6 @@ import requests
 from config import auth, auth2
 
 API_KEY = auth.api
-API_KEY2 = auth2.ipinfoapi
 print()
 
 try:
@@ -20,7 +23,7 @@ try:
 
     response = requests.get(f'https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API_KEY}', timeout=10)
     data = response.json()
-    response2 = requests.get(f'https://ipinfo.io/{IP}?token={API_KEY2}', timeout=10)
+    response2 = requests.get(f'https://ipinfo.io/{IP}', timeout=10)
     data2 = response2.json()
 
     latitude = data["location"].get("latitude")
