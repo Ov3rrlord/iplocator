@@ -10,7 +10,7 @@ import json
 import sys
 from datetime import datetime
 import requests
-from config import auth, auth2
+from config import auth
 
 API_KEY = auth.api
 print()
