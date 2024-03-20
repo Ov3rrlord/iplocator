@@ -1,8 +1,7 @@
-FROM debian:11
+FROM debian:12
 RUN apt-get update -yq
-RUN apt-get install python3 -yq
-RUN apt-get install python3-requests -yq
+RUN apt-get install nmap -yq
 ADD . /app/
 WORKDIR /app
 VOLUME /app/logs
-CMD python3 iplocator.py
+EXPOSE 2424:22
