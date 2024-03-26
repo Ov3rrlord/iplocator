@@ -11,6 +11,7 @@ import sys
 from datetime import datetime
 import requests
 from config import auth
+from config import auth
 
 API_KEY = auth.api
 print()
@@ -24,7 +25,11 @@ try:
     response = requests.get(
         f"https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API_KEY}", timeout=10
     )
+    response = requests.get(
+        f"https://api.geoapify.com/v1/ipinfo?ip={IP}&apiKey={API_KEY}", timeout=10
+    )
     data = response.json()
+    response2 = requests.get(f"https://ipinfo.io/{IP}", timeout=10)
     response2 = requests.get(f"https://ipinfo.io/{IP}", timeout=10)
     data2 = response2.json()
 
@@ -33,9 +38,11 @@ try:
 
     location2 = data2.get("loc")
     location2 = location2.split(",")
+    location2 = location2.split(",")
     lat2 = location2[0]
     long2 = location2[1]
 
+    with open("location.json", "w", encoding="UTF-8") as write_file:
     with open("location.json", "w", encoding="UTF-8") as write_file:
         json.dump(data, write_file, indent=4)
         json.dump(data2, write_file, indent=4)
@@ -48,7 +55,9 @@ try:
     print("IP              *", data.get("ip"))
     print("Country code:   *", data["country"].get("iso_code"))
     print("Country:        *", data["country"].get("name"))
+    print("Country:        *", data["country"].get("name"))
     print("City:           *", data["city"].get("name"))
+    print("Region:         *", data2.get("region"))
     print("Region:         *", data2.get("region"))
     print("Latitude:       *", data["location"].get("latitude"))
     print("Longitude:      *", data["location"].get("longitude"))
@@ -57,6 +66,7 @@ try:
     print("Continent name: *", data["continent"]["names"].get("en"))
     print("Continent Code  *", data["continent"].get("code"))
     print("Flag:           *", data["country"].get("flag"))
+    print("Organization:   *", data2.get("org"))
     print("Organization:   *", data2.get("org"))
     print("Timezone:       *", data2.get("timezone"))
 
@@ -88,5 +98,7 @@ except IndexError:
 # print("An error occurred. Please verify and try again.", e)
 except ConnectionError:
     print("Network error...")
+except FileNotFoundError as e:
+    print("There is an error while trying too get the config file", e)
 except FileNotFoundError as e:
     print("There is an error while trying too get the config file", e)
