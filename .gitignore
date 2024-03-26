@@ -1,0 +1,6 @@
+__pycache__
+focal
+.idea
+.git
+.mypy_cache
+config

@@ -100,5 +100,4 @@ except ConnectionError:
     print("Network error...")
 except FileNotFoundError as e:
     print("There is an error while trying too get the config file", e)
-except FileNotFoundError as e:
-    print("There is an error while trying too get the config file", e)
+
